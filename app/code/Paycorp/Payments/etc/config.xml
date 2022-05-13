@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <paycorp_cc>
+                <active>1</active>
+                <model>Paycorp\Payments\Model\Method\Cc</model>
+                <title>Pay with Credit Card (Paycorp)</title>
+                <!-- <payment_action>authorize_capture</payment_action>
+                <order_status>pending_payment</order_status> -->
+                <pg_domain>https://sampath.paycorp.com.au/rest/service/proxy</pg_domain>
+                <transaction_type>PURCHASE</transaction_type>
+                <allowspecific>0</allowspecific>
+            </paycorp_cc>
+        </payment>
+    </default>
+</config>
